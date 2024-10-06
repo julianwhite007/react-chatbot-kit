@@ -303,11 +303,18 @@ const Chat = ({
             className="react-chatbot-kit-chat-input-form"
             onSubmit={handleSubmit}
           >
-            <input
+            <textarea
+              value={input}
+              //onKeyDown={handleKeyDown}
+              onChange={(e) => setInputValue(e.target.value)}
+              rows={3} // You can customize the number of rows for multiline input
+              style={{
+                width: '100%',
+                padding: '10px',
+                resize: 'none', // Disable textarea resizing for consistency
+              }}
               className="react-chatbot-kit-chat-input"
               placeholder={placeholder}
-              value={input}
-              onChange={(e) => setInputValue(e.target.value)}
             />
             <button
               className="react-chatbot-kit-chat-btn-send"
