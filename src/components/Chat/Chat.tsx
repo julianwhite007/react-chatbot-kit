@@ -305,7 +305,11 @@ const Chat = ({
           >
             <textarea
               value={input}
-              //onKeyDown={handleKeyDown}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleSubmit(e);
+                }
+              }}
               onChange={(e) => setInputValue(e.target.value)}
               rows={2} // You can customize the number of rows for multiline input
               className="react-chatbot-kit-chat-input"

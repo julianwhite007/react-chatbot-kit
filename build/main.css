@@ -164,12 +164,14 @@
   bottom: 0;
   width: 100%;
   display: flex;
+  font-family: Arial;
 }
 
 .react-chatbot-kit-chat-message-container {
   padding: 0 17.5px 10px 17.5px;
   overflow: scroll;
   height: 424px;
+  font-family: Arial;
 }
 
 .react-chatbot-kit-chat-input {
@@ -179,6 +181,8 @@
   font-size: 0.85rem;
   border-top: 1px solid #d8d8d8;
   border-bottom-left-radius: 5px;
+  resize: none;
+  font-family: Arial;
 }
 
 .react-chatbot-kit-chat-input-form {
